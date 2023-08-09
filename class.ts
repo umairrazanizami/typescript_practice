@@ -40,7 +40,6 @@ class admin extends user {
     }
     
 }
-let sum: number ;
 
 let saad = new user(1, 'saad', 'faisalabad');
 let umair = new admin(2,'umair','fsd','raza');
