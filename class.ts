@@ -26,30 +26,25 @@ class user {
 
 class admin extends user {
 
-    pass : string;
+    pass: string;
 
-    constructor(id:number, name : string, address:string,pass:string){
-        
-    super(id,name,address);
-    this.pass = pass;
+    constructor(id: number, name: string, address: string, pass: string) {
+
+        super(id, name, address);
+        this.pass = pass;
 
     }
 
-    printAdmin(){
+    printAdmin() {
         return `${this.printUser()} and password is ${this.pass}`;
     }
-    
+
 }
 
 let saad = new user(1, 'saad', 'faisalabad');
-let umair = new admin(2,'umair','fsd','raza');
-
-
-
+let umair = new admin(2, 'umair', 'fsd', 'raza');
 let password = saad.printUser();
-
 let data = umair.printAdmin();
-
 saad.userId = 100;
 
 console.log(chalk.blueBright.bgGreenBright(data));
