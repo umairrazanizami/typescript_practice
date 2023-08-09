@@ -1,2 +1,2 @@
-# typescript_practice
-Learning Typescript
+# Type Script Practice
+Learning Typescript 
